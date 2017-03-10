@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+        }
+
+        body {
+            font-family: "Courier New", monospace;
+            text-align: center;
+        }
+
+        .invalid-field {
+            border: 1px solid red;
+        }
+
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mario 4</h1>
+
+    <p>When you say</p>
+    <p><strong>Draw a pyramid</strong></p>
+    <p>I say:</p>
+    <br>
+
+    <form id="draw-form">
+        <label>
+            How high?
+            <input type="text" id="height" autofocus />
+            <label class="error-message"></label>
+        </label>
+        <br><br>
+        <input type="submit" value="Draw a pyramid"/>
+    </form>
+
+    <br><br>
+
+    <div id="pyramid"></div>
+
+    <script src="mario.js" defer></script>
+</body>
+</html>
