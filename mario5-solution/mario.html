@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        #pyramid {
+            line-height: 0;
+            font-size: 30px;
+        }
+
+        body {
+            font-family: "Courier New", monospace;
+        }
+
+        .centered {
+            text-align: center;
+        }
+
+        .relative {
+            position: relative;
+        }
+
+        .invalid-field {
+            border: 1px solid red;
+        }
+
+        .error-message {
+            color: red;
+            position: absolute;
+            top: 0%;
+            left: 100%;
+            width: 150%;
+            text-align: left;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="centered">
+    <h1>Mario 5</h1>
+
+    <p>When you say</p>
+    <p><strong>Draw a pyramid</strong></p>
+    <p>I say:</p>
+    <br>
+    </div>
+
+    <form id="draw-form" class="centered">
+        <label class="relative">
+            How high?
+            <input type="text" id="height"/>
+            <div class="error-message"></div>
+        </label>
+        <br><br>
+        <input type="submit" class="centered" value="Draw a pyramid"/>
+    </form>
+
+    <br><br>
+
+    <div id="pyramid" class="centered"></div>
+
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="mario.js"></script>
+</body>
+</html>
